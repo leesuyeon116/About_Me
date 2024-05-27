@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    height: 2000px;
+}
+
+section {
+    height: 1500px;
+    background-image: url('images/background.gif');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 7em;
+    width: 250px;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    animation: slide 1s ease-out;
+}
+
+@keyframes slide {
+    from {
+        left: -100px;
+        opacity: 0;
+    }
+    to {
+        left: 130px;
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        left: 130px;
+        opacity: 1;
+    }
+    to {
+        left: -100px;
+        opacity: 0;
+    }
+}
